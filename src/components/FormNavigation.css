@@ -11,15 +11,13 @@
 .nav-left {
   display: flex;
   gap: 12px;
-  position: absolute;
-  left: 0;
 }
 
 .nav-center {
   display: flex;
   gap: 12px;
-  position: absolute;
-  right: 40px;
+  margin-left: auto;
+  margin-right: 180px;
 }
 
 .nav-right {

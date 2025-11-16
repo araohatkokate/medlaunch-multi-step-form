@@ -153,7 +153,7 @@ const Step3 = () => {
             )}
           </div>
         </div>
-        <div className="form-row">
+        <div className="form-row form-row-full">
           <div className="form-group">
             <label>
               Phone {isRequired('phone') && <span className="required">*</span>}
@@ -169,6 +169,8 @@ const Step3 = () => {
               <span className="error-message">{errors[`${section}.phone`]}</span>
             )}
           </div>
+        </div>
+        <div className="form-row form-row-full">
           <div className="form-group">
             <label>
               Email {isRequired('email') && <span className="required">*</span>}
@@ -215,7 +217,7 @@ const Step3 = () => {
             </span>
           )}
         </div>
-        <div className="form-row">
+        <div className="form-row form-row-three">
           <div className="form-group">
             <label>
               City <span className="required">*</span>

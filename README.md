@@ -122,15 +122,15 @@ medlaunch-multi-step-form/
 
 ## Features
 
-- Multi-step form navigation (Next/Previous)
-- Form data persistence across steps
-- Step-by-step validation
-- Responsive design (mobile, tablet, desktop)
-- File upload with drag-and-drop
-- Email verification workflow
-- Form submission with console logging
-- Progress indicator
-- Save functionality (UI ready, backend integration needed)
+- ✅ Multi-step form navigation (Next/Previous)
+- ✅ Form data persistence across steps
+- ✅ Step-by-step validation
+- ✅ Responsive design (mobile, tablet, desktop)
+- ✅ File upload with drag-and-drop
+- ✅ Email verification workflow
+- ✅ Form submission with console logging
+- ✅ Progress indicator
+- ✅ Save functionality (UI ready, backend integration needed)
 
 ## Assumptions Made
 
@@ -159,4 +159,47 @@ medlaunch-multi-step-form/
 5. **Browser Compatibility**: Tested on modern browsers. Older browsers may have limited support.
 
 6. **Accessibility**: Basic accessibility features implemented. Full WCAG compliance would require additional testing and improvements.
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+The production build will be in the `dist` directory.
+
+## Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Linting
+
+```bash
+npm run lint
+```
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Future Enhancements
+
+- [ ] Add localStorage persistence for form data
+- [ ] Implement proper file preview functionality
+- [ ] Add loading states for async operations
+- [ ] Implement proper error boundaries
+- [ ] Add unit tests
+- [ ] Add E2E tests
+- [ ] Implement form data export/import
+- [ ] Add form analytics/tracking
+- [ ] Implement auto-save functionality
+
+## License
+
+This project is created for assessment purposes.
 

@@ -3,87 +3,43 @@
   margin: 0 auto;
 }
 
-.step-title {
-  font-size: 28px;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 30px;
-}
-
 .review-sections {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .review-section-card {
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 24px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-.section-main-title {
-  font-size: 20px;
+.section-blue-title {
+  font-size: 18px;
   font-weight: 600;
   color: #003366;
-  margin-bottom: 20px;
+  margin: 0 0 16px 0;
   padding-bottom: 12px;
   border-bottom: 2px solid #003366;
 }
 
-.subsection {
-  margin-bottom: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #eee;
-}
-
-.subsection:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.subsection-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.subsection-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: #333;
-}
-
-.btn-edit {
-  background: none;
-  border: 1px solid #003366;
-  color: #003366;
-  padding: 6px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  transition: all 0.2s;
-}
-
-.btn-edit:hover {
-  background-color: #003366;
-  color: white;
-}
-
-.subsection-content {
+.section-content {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
+  margin-bottom: 16px;
 }
 
 .info-row {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   font-size: 14px;
   line-height: 1.6;
 }
@@ -114,8 +70,8 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #eee;
 }
 
@@ -159,8 +115,28 @@
   color: #003366;
 }
 
+.btn-edit-section {
+  background: none;
+  border: 1px solid #003366;
+  color: #003366;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.btn-edit-section:hover {
+  background-color: #003366;
+  color: white;
+}
+
 .ready-to-submit {
   background-color: #f9f9f9;
+  grid-column: 1 / -1;
 }
 
 .certification-section {
@@ -217,14 +193,8 @@
 }
 
 @media (max-width: 768px) {
-  .step-title {
-    font-size: 24px;
-  }
-
-  .subsection-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+  .review-sections {
+    grid-template-columns: 1fr;
   }
 
   .export-buttons {

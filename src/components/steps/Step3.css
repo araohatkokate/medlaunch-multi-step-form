@@ -61,6 +61,14 @@
   margin-bottom: 20px;
 }
 
+.form-row-full {
+  grid-template-columns: 1fr;
+}
+
+.form-row-three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .form-row.three-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
